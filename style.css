@@ -1,0 +1,350 @@
+/* Custom CSS */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+}
+/* all similar content styling codes */
+section{
+    padding: 100px 0;
+}
+.container{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: crimson;
+}
+
+.navbar-brand{
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+}
+.navbar-nav  .nav-link {
+    color: #fff;
+}
+
+.navbar-brand span{
+    color: black;
+    font-weight: 600;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #949d9e;
+}
+
+
+/* Home Section Styling */
+.home {
+    
+    display: flex;
+    min-height: 500px;
+    height: 100vh;
+    color: #fff;
+    background-color: black;
+}
+.home .container{
+    width: 100%;
+    display: flex;
+  }
+.home .container{
+    margin: auto 0 auto 40px;
+
+}
+.hello-text{
+    font-size: 27px;
+}
+.name-text{
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+ .fresher-text{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.fresher-text span{
+    color: crimson;
+    font-weight: 500;
+}
+/* About Us Section Styling */
+  .about-me h3{
+    /* font-weight: 700; */
+    text-align: center;
+    
+    font-size: 26px;
+    font-weight: 600;
+    text-shadow: 5px 5px 4px gray;
+  }
+  .about-me .content ul{
+    list-style: none;
+    margin-top: 10%;
+    padding: 0;
+  }
+  .about-me .content ul li{
+    padding-bottom: 10px;
+  }
+  .about-me .row{
+    display: flex;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+    justify-content: space-between;
+  }
+  .about h2{
+    font-weight: 600;
+    text-shadow: 5px 5px 4px crimson;
+  }
+
+/* education */
+.education{
+    background-color: #111;
+}
+.card{
+    min-height: 250px;
+}
+.card-columns{
+    margin-top: 10%;
+}
+.card-title{
+    color: crimson;
+    font-weight: 600;
+    font-size: 20px;
+}
+.card-body{
+    box-shadow: 5px 20px 30px crimson;
+}
+.education h2{
+    font-weight: 600;
+    text-shadow: 5px 5px 4px crimson;
+}
+  
+/* Skills Section Styling */
+.skills h2{
+    font-weight: 600;
+    text-shadow: 5px 5px 4px crimson;
+}
+.progress-bar{
+    background-color: crimson;
+}
+.skills .container .row{
+    margin-top: 10%;
+
+}
+/* Projects Section Styling */
+
+.projects{
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px 20px inset;
+}
+.projects h2{
+    font-weight: 600;
+    text-shadow: 5px 5px 4px crimson;
+}
+.projects .row {
+    border: 2px solid;
+    padding: 15px;
+    /* box-shadow: 20px 20px 20px 15px grey; */
+}
+.projects .proj {
+    border: 3px solid;
+    padding: 15px;
+    box-shadow: 10px 10px 10px 15px gray;
+}
+
+.proj-name{
+    font-size: 20px;
+    font-weight: 666;
+}
+/* .projects .tech{
+    font-weight: 600;
+} */
+.projects p{
+    text-align: justify;
+}
+
+/* Contact Us Section Styling */
+/* #contact {
+    background-color: gray;
+} */
+
+.contact .icons{
+    margin-top: 50px;
+    /* margin: 10px 0, 0, 0; */
+}
+.contact .user{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .row .info{
+    margin-left: 30px;
+}
+.contact .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .info .head{
+    font-weight: 600;
+}
+.contact .info .sub-title{
+    color: #333;
+}
+.contact h2{
+    font-weight: 600;
+    text-shadow: 5px 5px 4px crimson;
+}
+
+.contact .field .input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+  border: 2px solid black;
+}
+.contact .button-area button{
+    width: 160px;
+   justify-content: center;
+   
+}
+
+
+  /* responsive media query start */
+  /* Media queries */
+  @media (max-width: 768px) {
+    .card-columns {
+      column-count: 1;
+    }
+  }
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    /* .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    } */
+    .home .row .name-text{
+        font-size: 70px;
+    }
+    .home .row .fresher-text{
+        font-size: 35px;
+    }
+    .home .row .btn{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .container{
+        max-width: 930px;
+    }
+    /* .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }*/
+} 
+
+@media (max-width: 690px) {
+    .container{
+        padding: 0 23px;
+    }
+     .home .row .name-text{
+        font-size: 60px;
+    }
+    .home .row .fresher-text{
+        font-size: 32px;
+    }
+    .home .row .btn{
+        font-size: 20px;
+    }
+    /* .services .serv-content .card{
+        width: 100%;
+    } */
+}
+
+@media (max-width: 500px) {
+    .home .row .name-text{
+        font-size: 50px;
+    }
+    .home .row .fresher-text{
+        font-size: 27px;
+    }
+    /* .about .about-content .right .text,
+    .skills .skills-content .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .right form .error-box{
+       width: 150px;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    } */
+} 
